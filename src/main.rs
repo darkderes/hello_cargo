@@ -1,4 +1,23 @@
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool,
+}
+
+
 fn main() {
+
+
+   let user1 =  User {
+        username: String::from("someusername123"),
+        email: String::from("someone@example.com"),
+        sign_in_count: 1,
+        active: true,
+    };
+
+
+
     // println!("Hello, world!");
     // // let se utiliza para inmutables variables por defecto
     // let x = 5;
@@ -21,6 +40,9 @@ fn main() {
     // array();
 
     // array_while();
+
+    println!("{}", user1.username);
+
     let s1 = String::from("Hello");
     let s2 = s1.clone(); // pasamos una referencia a s1
 
